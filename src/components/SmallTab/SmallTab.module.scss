@@ -1,0 +1,60 @@
+@import '../../scss/variables';
+
+.SmallTab {
+    border: 3px $secondaryColor solid;
+    border-radius: 30px;
+    overflow: hidden;
+    grid-column: 2/3;
+}
+
+.TabBody {
+    height: 90%;
+    overflow: auto;
+    position: relative;
+}
+
+
+.TabHeader {
+    background-color: $secondaryColor;
+    color: $whiteColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em .5em;
+    height: 10%;
+    position: relative;
+    z-index: 11;
+
+    h2 {
+        margin-right: auto;
+    }
+    
+}
+
+.GroupTab {
+    padding: 1em .25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+        margin-bottom: .5em;
+    }
+}
+
+.ProfilePic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    img {
+        width: 50%;
+    }
+
+    h1 {
+        color: $primaryColor;
+        margin: .5em 0 1em;
+    }
+}
+

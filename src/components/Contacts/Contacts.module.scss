@@ -1,0 +1,26 @@
+.Contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1.5em .5em;
+    height: 100%;
+    overflow: auto;
+}
+
+.ContactsSearch {
+
+    overflow: auto;
+
+    li a {
+        justify-content: space-around;
+    }
+}
+
+.ContactsGroup {
+    overflow: auto;
+}
+
+.NoFriend {
+    color: #F1F4FF;
+    margin: auto;
+}

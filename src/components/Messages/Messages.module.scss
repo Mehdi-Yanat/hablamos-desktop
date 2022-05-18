@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.Messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: auto;
+    overflow-x: hidden;
+    padding: 0 1em;
+    margin-top: auto;
+}
+
+.NoMessage {
+    color: #F1F4FF;
+    margin: auto;
+    margin-bottom: 5em;
+}
+
+.Seen {
+    color: $primaryColor;
+    transform: translateY(-50%);
+    margin-top: 1em;
+    width: 80%;
+}  
