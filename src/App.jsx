@@ -15,6 +15,8 @@ import DialogBox from './components/DialogBox/DialogBox';
 import {checkAuth, logout} from './store/auth/auth-actions';
 import {userActions} from './store/user/user-slice';
 import axios from './axios';
+import ReactGA from "react-ga4";
+ReactGA.initialize(process.env.REACT_APP_GA_MEASUREMENT_ID || '');
 
 const ENDPOINT = axios.defaults.baseURL; 
 export const socket = socketIOClient(ENDPOINT);
@@ -35,6 +37,7 @@ const App = () => {
 	const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem('isDarkMode')==='false' ? false : true);
 
 	useEffect(() => {
+		ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search });
         socket.on('message:receive', (payload) => {
 			if (payload.file) {
 				dispatch(userActions.receiveFile({
