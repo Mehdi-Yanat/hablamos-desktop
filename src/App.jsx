@@ -80,7 +80,7 @@ const App = () => {
 
 	useEffect(() => {
 		if (isMobile) {
-			window.location.href = 'https://m.hablamos.me';
+			window.location.href = 'https://m.hablamos.website';
 		} 
 
 		// window.addEventListener('load', pageLoadHandler);
